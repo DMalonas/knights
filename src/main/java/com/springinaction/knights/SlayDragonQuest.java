@@ -1,3 +1,5 @@
+package com.springinaction.knights;
+
 import java.io.PrintStream;
 
 public class SlayDragonQuest implements Quest{

@@ -1,3 +1,5 @@
+package com.springinaction.knights;
+
 public class DamselRescuingKnight implements Knight {
 
     private RescueDamselQuest quest;

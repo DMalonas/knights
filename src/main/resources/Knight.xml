@@ -7,11 +7,17 @@
           http://www.springframework.org/schema/aop
             http://www.springframework.org/schema/aop/spring-aop-2.0.xsd">
 
-    <bean id="knight" class="BraveKnight">
-        <constructor-arg ref="quest" />
+    <bean id="knight" class="com.springinaction.knights.BraveKnight">
+        <constructor-arg ref="quest"/>
+        <constructor-arg ref="minstrel"/>
     </bean>
 
-    <bean id="quest" class="SlayDragonQuest">
+    <bean id="quest" class="com.springinaction.knights.SlayDragonQuest">
         <constructor-arg value="#{T(System).out}" />
     </bean>
+
+    <bean id="minstrel" class="com.springinaction.knights.Minstrel">
+        <constructor-arg value="#{T(System).out}" />
+    </bean>
+
 </beans>

@@ -1,3 +1,5 @@
+package com.springinaction.knights;
+
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class KnightMain {
